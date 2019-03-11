@@ -14,10 +14,25 @@ public class VowelUtils {
 
 
     public static Boolean startsWithVowel(String word) {
-        return null;
+        System.out.println(word.substring(0,1));
+        if(word.substring(0,1) == "A"
+                || word.substring(0,1) == "E"
+                || word.substring(0,1) == "I"
+                || word.substring(0,1) == "O"
+                || word.substring(0,1) == "U" ){
+            return true;
+        }
+        return false;
     }
 
     public static Boolean isVowel(Character character) {
-        return null;
+        if(character == 'a' || character == 'A'
+                || character == 'e' || character == 'E'
+                || character == 'i' || character == 'I'
+                || character == 'o' || character == 'O'
+                || character == 'u' || character == 'U'){
+            return true;
+        }
+        return true;
     }
 }
